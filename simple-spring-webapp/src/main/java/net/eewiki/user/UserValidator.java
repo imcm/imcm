@@ -49,5 +49,9 @@ public class UserValidator implements Validator {
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "firstName", "field.required", "First name field cannot be empty");
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "lastName",  "field.required", "Last name field cannot be empty");
 	}
+	
+	public int add(int i, int j) {
+		return i + j;
+	}
 
 }
